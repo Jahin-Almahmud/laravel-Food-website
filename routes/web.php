@@ -6,6 +6,7 @@ use App\Http\Controllers\admin\CategoryController;
 use App\Http\Controllers\admin\ChefController;
 use App\Http\Controllers\admin\FoodController;
 use App\Http\Controllers\admin\GalleryController;
+use App\Http\Controllers\admin\SettingController;
 use App\Http\Controllers\admin\SliderController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Auth;
@@ -41,6 +42,8 @@ Route::prefix('admin')->as('admin')->namespace('App\Http\Controllers\admin')->mi
     Route::DELETE ('/message/{id}', [AdminController::class, 'delete'])->name('message.delete');
     Route::get('/booktable', [AdminController::class, 'booktable'])->name('booktable');
     Route::DELETE ('/booktable/{id}', [AdminController::class, 'booktabledelete'])->name('booktable.delete');
+    Route::get('/setting', [SettingController::class, 'setting'])->name('setting');
+    Route::post('/setting/update', [SettingController::class, 'settingupdate'])->name('setting.update');
     Route::resource('category', CategoryController::class);
     Route::resource('food', FoodController::class);
     Route::resource('chef', ChefController::class);

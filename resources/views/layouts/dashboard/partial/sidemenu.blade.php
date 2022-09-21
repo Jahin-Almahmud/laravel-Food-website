@@ -36,16 +36,22 @@
                 <span class="nav-text">Slider</span>
             </a>
            </li>
-            <li><a href="{{route('adminabout.index')}}" class="ai-icon" aria-expanded="false">
-                <i class="flaticon-381-settings-6"></i>
-                <span class="nav-text">About Setting</span>
-            </a>
-           </li>
+
             <li><a href="{{route('adminmessages')}}" class="ai-icon" aria-expanded="false">
                 <i class="flaticon-381-user-9"></i>
                 <span class="nav-text">Messages</span>
             </a>
            </li>
+           <li><a href="{{route('adminabout.index')}}" class="ai-icon" aria-expanded="false">
+            <i class="flaticon-381-settings-6"></i>
+            <span class="nav-text">About Setting</span>
+            </a>
+           </li>
+            <li><a href="{{route('adminsetting')}}" class="ai-icon" aria-expanded="false">
+                <i class="flaticon-381-settings-6"></i>
+                <span class="nav-text">Setting</span>
+                    </a>
+            </li>
            <hr>
            <li><a href="{{route('home')}}" class="ai-icon" aria-expanded="false">
             <i class="flaticon-381-home"></i>
